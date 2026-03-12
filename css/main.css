@@ -1,3 +1,4 @@
+/* starter css for fonts and text sizes + background colour */
 h1 {
     font-family: lato, sans-serif;
     font-size: 2.027rem;
@@ -16,4 +17,135 @@ h3 {
 p {
     font-family: karla, sans-serif;
     font-size: 1rem;
+}
+body {
+    background-color: #f3f0e9;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header styles */
+
+header {
+    background-color: #000000;
+}
+
+header img {
+    display: block;
+    justify-self: center;
+    padding: 2rem;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    font-family: lato, sans-serif;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+/* hover and active states for nav links */
+header nav ul li:hover {
+    color: #d69e3d;
+}
+
+header nav ul li:active {
+    color: #966f2c;
+}
+
+/* "experience" section styles */
+.experience {
+    background-image: url(../images/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: #ffffff;
+    padding: 5rem;
+    text-align: center;
+}
+
+.experience h1 {
+    font-weight: 900;
+}
+
+.experience button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: karla, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/* hover and active states for buttons */
+.experience button:hover {
+    background-color: #d69e3d;
+    color: #ffffff;
+}
+
+.experience button:active {
+    background-color: #966f2c;
+    color: #ffffff;
+}
+
+/* "welcome" section styles */
+.welcome {
+    display: block;
+    padding: 3rem 1rem 1rem;
+}
+
+.welcome h3 {
+    color: #d69e3d;
+    font-weight: 500;
+}
+
+.welcome h1 {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* "offer" section styles */
+.offers {
+    text-align: center;
+    padding: 2rem;
+}
+
+.offers h3 {
+    color: #d69e3d;
+    font-weight: 500;
+}
+
+.offers h1 {
+    color: #000000;
+    font-weight: 700;
+}
+
+/* individual offers styles */
+.offers img {
+    display: flex;
+    justify-self: center;
+    width: 200px;
+}
+
+.offer-1 {
+    padding: 1.5rem 0;
+}
+
+.offer-2 {
+    padding: 1.5rem 0;
+}
+
+.offer-3 {
+    padding: 1.5rem 0;
+}
+
+.offer-4 {
+    padding: 1.5rem 0;
 }
