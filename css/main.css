@@ -1,17 +1,68 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* starter css for fonts and text sizes + background colour */
 h1 {
     font-family: lato, sans-serif;
     font-size: 2.027rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
 }
 
 h2 {
     font-family: lato, sans-serif;
     font-size: 1.802rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
 }
 
 h3 {
     font-family: lato, sans-serif;
     font-size: 1.424rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -22,6 +73,7 @@ body {
     background-color: #f3f0e9;
     max-width: 1200px;
     margin: 0 auto;
+    line-height: 1.3;
 }
 
 /* header styles */
@@ -40,13 +92,15 @@ header nav ul{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    padding: 0 2rem;
+    padding: 0 2rem 1.2rem;
 }
 
 header nav ul li {
     font-family: lato, sans-serif;
     color: #ffffff;
     font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* hover and active states for nav links */
@@ -66,7 +120,7 @@ header nav ul li:active {
     background-repeat: no-repeat;
     height: 100%;
     color: #ffffff;
-    padding: 5rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -76,18 +130,21 @@ header nav ul li:active {
 
 .experience button {
     padding: 0.8rem 1.5rem;
-    border: none;
+    border: solid #ffffff;
+    margin: 1rem;
     background-color: #ffffff;
     color: #000000;
     font-family: karla, sans-serif;
     font-size: 1rem;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 /* hover and active states for buttons */
 .experience button:hover {
-    background-color: #d69e3d;
     color: #ffffff;
+    background-color: #966f2c;
+    border: solid #ffffff;
 }
 
 .experience button:active {
@@ -122,7 +179,7 @@ header nav ul li:active {
     font-weight: 500;
 }
 
-.offers h1 {
+.offers h1, h2 {
     color: #000000;
     font-weight: 700;
 }
@@ -132,6 +189,7 @@ header nav ul li:active {
     display: flex;
     justify-self: center;
     width: 200px;
+    padding: 0.8rem;
 }
 
 .offer-1 {
@@ -146,6 +204,159 @@ header nav ul li:active {
     padding: 1.5rem 0;
 }
 
-.offer-4 {
-    padding: 1.5rem 0;
+/* "explore" section styles */
+.explore {
+    background-image: url(../images/coffee-shop.jpeg);
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem;
+}
+
+.explore h3 {
+    color: #d69e3d;
+}
+
+.explore h1 {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.explore .menu {
+    padding: 2rem;
+}
+
+.explore .menu button {
+    padding: 0.8rem 1.5rem;
+    border: solid #ffffff;
+    margin: 1.8rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: karla, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.explore .locations {
+    padding: 2rem;
+}
+
+.explore .locations button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    margin: 1.8rem;
+    background-color: transparent;
+    border: solid #ffffff;
+    color: #ffffff;
+    font-family: karla, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* hover and active states for explore buttons */
+.explore .menu button:hover {
+    color: #ffffff;
+    background-color: #966f2c;
+}
+
+.explore .menu button:active {
+    color: #ffffff;
+    background-color: #966f2c;
+    border-color: #966f2c;
+}
+
+.explore .locations button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.explore .locations button:active {
+    background-color: #966f2c;
+    border-color: #966f2c;
+}
+
+/* "about" section styles */
+.about {
+    padding: 5rem 1rem;
+}
+
+.about img {
+    
+}
+
+.about h3 {
+    color: #d69e3d;
+    padding-top: 1rem;
+}
+
+.about h1 {
+    color: #000000;
+    font-weight: 900;
+}
+
+.about p {
+    padding: 0.5rem 0;
+}
+
+.about button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    margin: 0.8rem 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: karla, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* hover and active states for about buttons */
+.about button:hover {
+    background-color: #966f2c;
+}
+
+.about button:active {
+    background-color: #966f2c;
+}
+
+/* "testimonials" section styles */
+.testimonials {
+    background-color: #000000;
+    padding: 5rem 1rem;
+}
+
+.testimonials h3 {
+    color: #d69e3d;
+}
+
+.testimonials h1 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.testimonials p {
+    color: #ffffff;
+}
+
+.testimonials .jane {
+    background-image: url(../images/testimonial-1.jpeg);
+}
+
+.testimonials .scott {
+    background-image: url(../images/testimonial-2.jpeg);
+}
+
+.testimonials .susie {
+    background-image: url(../images/testimonial-3.jpeg);
+}
+
+/* footer styles */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
 }
