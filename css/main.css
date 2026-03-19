@@ -107,11 +107,13 @@ header nav ul li {
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
+    transition: all 0.5s ease-in;
 }
 
 /* hover and active states for nav links */
 header nav ul li:hover {
     color: #d69e3d;
+    transition: color 0.5s ease-in-out;
 }
 
 header nav ul li:active {
@@ -144,6 +146,7 @@ header nav ul li:active {
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
+    transition: all 0.5s ease-in;
 }
 
 /* hover and active states for buttons */
@@ -151,6 +154,7 @@ header nav ul li:active {
     color: #ffffff;
     background-color: #966f2c;
     border: solid #ffffff;
+    transition: all 0.5s ease-in-out;
 }
 
 .experience button:active {
@@ -255,6 +259,7 @@ header nav ul li:active {
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
+    transition: all 0.5s ease-in;
 }
 
 .explore .locations {
@@ -272,12 +277,14 @@ header nav ul li:active {
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
+    transition: all 0.5s ease-in;
 }
 
 /* hover and active states for explore buttons */
 .explore .menu button:hover {
     color: #ffffff;
     background-color: #966f2c;
+    transition: all 0.5s ease-in;
 }
 
 .explore .menu button:active {
@@ -289,6 +296,8 @@ header nav ul li:active {
 .explore .locations button:hover {
     background-color: #ffffff;
     color: #000000;
+    transition: all 0.5s ease-in;
+
 }
 
 .explore .locations button:active {
@@ -325,11 +334,14 @@ header nav ul li:active {
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
+    transition: all 0.5s ease-in;
 }
 
 /* hover and active states for about buttons */
 .about button:hover {
     background-color: #966f2c;
+    transition: all 0.5s ease-in;
+
 }
 
 .about button:active {
@@ -358,6 +370,7 @@ header nav ul li:active {
     padding-left: 1rem;
 }
 
+/* individual testimonial styles */
 .testimonials .jane {
     background-image: url(../images/testimonial-1.jpeg);
     background-repeat: no-repeat;
@@ -393,6 +406,7 @@ footer {
     padding: 1rem 1rem 5rem;
     border-top: solid rgb(70, 70, 70) 1px;
 }
+
 
 /* animation keyframe */
 @keyframes slideIn {
