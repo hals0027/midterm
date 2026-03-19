@@ -76,6 +76,11 @@ body {
     line-height: 1.3;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* header styles */
 
 header {
@@ -86,6 +91,7 @@ header img {
     display: block;
     justify-self: center;
     padding: 2rem;
+    animation: slideIn 1.5s ease;
 }
 
 header nav ul{
@@ -166,6 +172,18 @@ header nav ul li:active {
 .welcome h1 {
     color: #000000;
     font-weight: 700;
+}
+
+.welcome-img {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.welcome-img img:first-child{
+    grid-column: span 2;
+    grid-row:auto;
 }
 
 /* "offer" section styles */
@@ -283,10 +301,6 @@ header nav ul li:active {
     padding: 5rem 1rem;
 }
 
-.about img {
-    
-}
-
 .about h3 {
     color: #d69e3d;
     padding-top: 1rem;
@@ -330,27 +344,45 @@ header nav ul li:active {
 
 .testimonials h3 {
     color: #d69e3d;
+    padding-left: 1rem;
 }
 
 .testimonials h1 {
     color: #ffffff;
     font-weight: 600;
+    padding-left: 1rem;
 }
 
 .testimonials p {
     color: #ffffff;
+    padding-left: 1rem;
 }
 
 .testimonials .jane {
     background-image: url(../images/testimonial-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem 0;
+    padding-top: 400px;
+    padding-bottom: 2rem;
 }
 
 .testimonials .scott {
     background-image: url(../images/testimonial-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem 0;
+    padding-top: 400px;
+    padding-bottom: 2rem;
 }
 
 .testimonials .susie {
     background-image: url(../images/testimonial-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem 0;
+    padding-top: 400px;
+    padding-bottom: 2rem;
 }
 
 /* footer styles */
@@ -358,5 +390,18 @@ footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
-    padding: 5rem 1rem;
+    padding: 1rem 1rem 5rem;
+    border-top: solid rgb(70, 70, 70) 1px;
 }
+
+/* animation keyframe */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* media queries for tablets */
